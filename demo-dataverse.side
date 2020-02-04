@@ -1,0 +1,909 @@
+{
+  "id": "4e550aeb-1888-4946-95e5-2f979b5ec225",
+  "version": "2.0",
+  "name": "demo-dataverse",
+  "url": "http://localhost:8080/",
+  "tests": [{
+    "id": "520edd5d-8fa7-47c7-81f8-73e7ac62d1ae",
+    "name": "Create a new dataset",
+    "commands": [{
+      "id": "d7c00513-0493-443c-83c7-6eb37c333394",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "798df932-d312-4485-9a62-b280c8ca680d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98949d6c-99e1-4bd0-8b7d-df45e583606d",
+      "comment": "",
+      "command": "//click",
+      "target": "linkText=General test dataverse",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06f4211a-b7c9-4ff1-93a9-7e2c2d7e65e1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#addDataForm .btn",
+      "targets": [
+        ["css=#addDataForm .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='addDataForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Add Data ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c990b811-2341-4531-8b97-5b3a7bd7d8f0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Dataset",
+      "targets": [
+        ["linkText=New Dataset", "linkText"],
+        ["css=.open li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New Dataset')]", "xpath:link"],
+        ["xpath=//form[@id='addDataForm']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataset.xhtml?ownerId=15')]", "xpath:href"],
+        ["xpath=//form/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3cb63ae6-dae6-4c18-b9cc-a66b84fba13e",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 0\\3Aj_idt440\\3A 0\\3Aj_idt442\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:0:j_idt438']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f33e11fb-d792-4d1b-9944-44dec6d77b6e",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 0\\3Aj_idt440\\3A 0\\3Aj_idt442\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt430:0:j_idt433:0:j_idt440:0:j_idt442:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:0:j_idt438']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/div/input", "xpath:position"]
+      ],
+      "value": "SELENIUM TEST dataset"
+    }, {
+      "id": "468087a6-6576-46b7-b82d-19cb7b506dff",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 7\\3Aj_idt475\\3A 0\\3Aj_idt477\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:7:j_idt473']/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c4665bd-c08f-4214-b7ab-8cfe23404c47",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 7\\3Aj_idt475\\3A 0\\3Aj_idt477\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:j_idt430:0:j_idt433:7:j_idt475:0:j_idt477:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:7:j_idt473']/div/div/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "This is a description. "
+    }, {
+      "id": "85a45d70-78b6-4438-9eeb-9526c950af0c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//table[@id='datasetForm:j_idt430:0:j_idt433:8:j_idt440:0:j_idt466']/tbody/tr[15]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[15]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "169aeedb-4dbf-4d6b-9515-2685133143d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 9\\3Aj_idt475\\3A 0\\3Aj_idt477\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:9:j_idt473']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "307b6eef-624c-47f5-8a53-555c9f92ed9e",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText", "id"],
+        ["name=datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt430\\3A 0\\3Aj_idt433\\3A 9\\3Aj_idt475\\3A 0\\3Aj_idt477\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt430:0:j_idt433:9:j_idt475:0:j_idt477:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt430:0:j_idt433:9:j_idt473']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Keyword"
+    }, {
+      "id": "de1cea5a-2223-4288-8de3-45de670c3fba",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:fileUpload_input",
+      "targets": [
+        ["id=datasetForm:fileUpload_input", "id"],
+        ["name=datasetForm:fileUpload_input", "name"],
+        ["css=#datasetForm\\3A fileUpload_input", "css:finder"],
+        ["xpath=//input[@id='datasetForm:fileUpload_input']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:fileUpload']/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "06041502-1590-4d5b-8c18-b1ccebbf9c8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Asave > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Asave > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:save']/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save Dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "db84b792-3675-430e-8d29-cf21afe362fc",
+    "name": "Create a new dataverse",
+    "commands": [{
+      "id": "67ba1551-9d3a-4a4f-ab5c-9e4954dd1158",
+      "comment": "",
+      "command": "open",
+      "target": "/dataverse/root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffe152c7-6b07-48f1-a0b3-68fe0330d2a6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e846f923-cc8a-428d-8da6-ed70c32ee8d6",
+      "comment": "",
+      "command": "//click",
+      "target": "linkText=General test dataverse",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ccf49d07-780d-4a2e-b52e-5f52a8e23868",
+      "comment": "",
+      "command": "click",
+      "target": "css=#addDataForm .btn",
+      "targets": [
+        ["css=#addDataForm .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='addDataForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Add Data ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "632f9d1f-f077-4dca-a43c-3dda94c5bb08",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Dataverse",
+      "targets": [
+        ["linkText=New Dataverse", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'New Dataverse')]", "xpath:link"],
+        ["xpath=//form[@id='addDataForm']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse.xhtml?ownerId=15')]", "xpath:href"],
+        ["xpath=//form/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'New Dataverse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf752388-39f1-4a02-b04d-dd521520b3ed",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:name",
+      "targets": [
+        ["id=dataverseForm:name", "id"],
+        ["name=dataverseForm:name", "name"],
+        ["css=#dataverseForm\\3Aname", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:name']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81b1c090-412f-49a4-b8a1-9fa724540602",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:name",
+      "targets": [
+        ["id=dataverseForm:name", "id"],
+        ["name=dataverseForm:name", "name"],
+        ["css=#dataverseForm\\3Aname", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:name']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Selenium test da"
+    }, {
+      "id": "3ff19bdd-cc94-4afe-8805-f30d141641ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:name",
+      "targets": [
+        ["id=dataverseForm:name", "id"],
+        ["name=dataverseForm:name", "name"],
+        ["css=#dataverseForm\\3Aname", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:name']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Selenium test dataverse"
+    }, {
+      "id": "60ebcb75-7ab2-41c1-93f0-c38caaf1c1ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:identifier",
+      "targets": [
+        ["id=dataverseForm:identifier", "id"],
+        ["name=dataverseForm:identifier", "name"],
+        ["css=#dataverseForm\\3Aidentifier", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:identifier']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "258dc5a2-db67-459e-8990-d0af63127dec",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:identifier",
+      "targets": [
+        ["id=dataverseForm:identifier", "id"],
+        ["name=dataverseForm:identifier", "name"],
+        ["css=#dataverseForm\\3Aidentifier", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:identifier']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "selenium"
+    }, {
+      "id": "ac383b8e-8907-4f4e-90e8-e0ce6c6dd08c",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:dataverseCategory",
+      "targets": [
+        ["id=dataverseForm:dataverseCategory", "id"],
+        ["name=dataverseForm:dataverseCategory", "name"],
+        ["css=#dataverseForm\\3A dataverseCategory", "css:finder"],
+        ["xpath=//select[@id='dataverseForm:dataverseCategory']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[3]/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab3915d4-702a-46b4-95b0-b4bd3861652d",
+      "comment": "",
+      "command": "select",
+      "target": "id=dataverseForm:dataverseCategory",
+      "targets": [],
+      "value": "label=Laboratory"
+    }, {
+      "id": "27fe5de6-96ed-4889-92fe-5b9edff01926",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:affiliation",
+      "targets": [
+        ["id=dataverseForm:affiliation", "id"],
+        ["name=dataverseForm:affiliation", "name"],
+        ["css=#dataverseForm\\3A affiliation", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:affiliation']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "933d5c58-2ae0-4cb8-8e37-b3636d864f5e",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:affiliation",
+      "targets": [
+        ["id=dataverseForm:affiliation", "id"],
+        ["name=dataverseForm:affiliation", "name"],
+        ["css=#dataverseForm\\3A affiliation", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:affiliation']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "DANS"
+    }, {
+      "id": "4d43af27-c7ae-456d-8df6-2a2cd14fe40d",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:description",
+      "targets": [
+        ["id=dataverseForm:description", "id"],
+        ["name=dataverseForm:description", "name"],
+        ["css=#dataverseForm\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='dataverseForm:description']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[3]/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f6188324-8592-4732-b30d-97364af81aa1",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:description",
+      "targets": [
+        ["id=dataverseForm:description", "id"],
+        ["name=dataverseForm:description", "name"],
+        ["css=#dataverseForm\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='dataverseForm:description']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[3]/div[2]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "This is a dataverse."
+    }, {
+      "id": "fa62e8de-b1a6-4d66-9ebe-5d38054e5310",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:metadataRoot",
+      "targets": [
+        ["id=dataverseForm:metadataRoot", "id"],
+        ["name=dataverseForm:metadataRoot", "name"],
+        ["css=#dataverseForm\\3AmetadataRoot", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:metadataRoot']", "xpath:attributes"],
+        ["xpath=//div[@id='dataverseForm:optionBlock_content']/div/div/div/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f6199d0-b424-41fa-b94f-082f65a42d7d",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["name=dataverseForm:j_idt246:1:mdbSelectOptional", "name"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//input[@id='2']", "xpath:attributes"],
+        ["xpath=//div[@id='dataverseForm:optionBlock_content']/div/div/div/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9207e100-a62a-461f-bb75-2a21093dfb91",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dataverseForm\\3Asave > .ui-button-text",
+      "targets": [
+        ["css=#dataverseForm\\3Asave > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='dataverseForm:save']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Create Dataverse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "c4ab2458-d128-4491-bd85-f20ce5a8cc87",
+    "name": "Edit metadata",
+    "commands": [{
+      "id": "d9806ea5-054d-41a4-957b-1bae623ab0ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.dataverse.nl/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "210b9ae3-0d2f-426a-8845-ac9083cbcbf0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e171290b-9505-4a2a-bb10-164453878584",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(2) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(2) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[2]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SELENIUM TEST dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "470217d3-e275-4083-8896-187994762073",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Metadata",
+      "targets": [
+        ["linkText=Metadata", "linkText"],
+        ["css=.ui-state-hover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Metadata')])[2]", "xpath:link"],
+        ["xpath=//div[@id='datasetForm:tabView']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#datasetForm:tabView:metadataMapTab')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "26375c73-8c05-4c27-aec1-deefe36ff609",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1120",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1120", "id"],
+        ["linkText=Add + Edit Metadata", "linkText"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1120", "css:finder"],
+        ["xpath=//a[@id='datasetForm:tabView:j_idt1120']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:metadataMapTab']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[24]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Add + Edit Metadata')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3641893-b1c1-4dc4-a768-564a36b25269",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 1\\3Aj_idt1169\\3A 0\\3Aj_idt1171\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1167']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7e25a21f-56b9-481f-9094-4d3f2934cb50",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 1\\3Aj_idt1169\\3A 0\\3Aj_idt1171\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1169:0:j_idt1171:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:1:j_idt1167']/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "added subtitle"
+    }, {
+      "id": "43365c06-015e-4693-91a8-cadb7843f4c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 27\\3Aj_idt1204\\3A 0\\3Aj_idt1206\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1202']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[28]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "956002ea-4b5b-46f2-aaf8-9ada6e35dfac",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 27\\3Aj_idt1204\\3A 0\\3Aj_idt1206\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1202']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[28]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Dataverse"
+    }, {
+      "id": "a9547a59-c1ee-4ec8-ac68-8b57b4fa7431",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 27\\3Aj_idt1204\\3A 0\\3Aj_idt1206\\3A 1\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1202']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[28]/div/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "477ab7aa-df4b-44b3-8db8-4fc942381c82",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1159\\3A 0\\3Aj_idt1162\\3A 27\\3Aj_idt1204\\3A 0\\3Aj_idt1206\\3A 1\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1204:0:j_idt1206:1:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1159:0:j_idt1162:27:j_idt1202']/div/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[28]/div/div/div/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "4.10.1"
+    }, {
+      "id": "a2d2083b-6144-4e99-b707-ca340254ee15",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Asave > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Asave > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:save']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0bfee2ce-bf5f-4625-b6ea-5dc7a4284cff",
+    "name": "Change permissions",
+    "commands": [{
+      "id": "6049d03f-baad-4cba-b3fb-7fcd2753bb58",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/dataset.xhtml?persistentId=hdl:20.500.12407/USZPT2",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1a0cc8c9-2621-4f10-9e63-e066a49ba4e6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7afdb188-f398-47c3-8d61-878dd97b9d7a",
+      "comment": "",
+      "command": "click",
+      "target": "id=editDataSet",
+      "targets": [
+        ["id=editDataSet", "id"],
+        ["css=#editDataSet", "css:finder"],
+        ["xpath=//button[@id='editDataSet']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Edit ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "13b04492-b385-4c24-a921-a282f4a4e04e",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=datasetForm:manageDatasetPermissions",
+      "targets": [
+        ["id=datasetForm:manageDatasetPermissions", "id"],
+        ["linkText=Dataset", "linkText"],
+        ["name=datasetForm:manageDatasetPermissions", "name"],
+        ["css=#datasetForm\\3AmanageDatasetPermissions", "css:finder"],
+        ["xpath=//a[contains(text(),'Dataset')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:manageDatasetPermissions']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/ul/li[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/permissions-manage.xhtml?id=43')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dataset')]", "xpath:innerText"]
+      ],
+      "value": "87.78125,14"
+    }, {
+      "id": "7c0c737b-c8e9-461d-858f-77c8746f5627",
+      "comment": "mouse move at something ",
+      "command": "mouseMoveAt",
+      "target": "id=datasetForm:manageDatasetPermissions",
+      "targets": [
+        ["id=datasetForm:manageDatasetPermissions", "id"],
+        ["linkText=Dataset", "linkText"],
+        ["name=datasetForm:manageDatasetPermissions", "name"],
+        ["css=#datasetForm\\3AmanageDatasetPermissions", "css:finder"],
+        ["xpath=//a[contains(text(),'Dataset')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:manageDatasetPermissions']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/ul/li[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/permissions-manage.xhtml?id=43')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dataset')]", "xpath:innerText"]
+      ],
+      "value": "87.78125,14"
+    }, {
+      "id": "4270a43e-3f20-4b89-9faf-607834a35490",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=datasetForm:manageDatasetPermissions",
+      "targets": [
+        ["id=datasetForm:manageDatasetPermissions", "id"],
+        ["linkText=Dataset", "linkText"],
+        ["name=datasetForm:manageDatasetPermissions", "name"],
+        ["css=#datasetForm\\3AmanageDatasetPermissions", "css:finder"],
+        ["xpath=//a[contains(text(),'Dataset')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:manageDatasetPermissions']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/ul/li[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/permissions-manage.xhtml?id=43')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dataset')]", "xpath:innerText"]
+      ],
+      "value": "87.78125,14"
+    }, {
+      "id": "3324b018-f893-422a-877f-12b6e0e5f007",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:manageDatasetPermissions",
+      "targets": [
+        ["id=datasetForm:manageDatasetPermissions", "id"],
+        ["linkText=Dataset", "linkText"],
+        ["name=datasetForm:manageDatasetPermissions", "name"],
+        ["css=#datasetForm\\3AmanageDatasetPermissions", "css:finder"],
+        ["xpath=//a[contains(text(),'Dataset')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:manageDatasetPermissions']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/ul/li[4]/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/permissions-manage.xhtml?id=43')]", "xpath:href"],
+        ["xpath=//li[4]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d039913-ae23-4311-bc9d-bfb63b977f03",
+      "comment": "",
+      "command": "click",
+      "target": "id=rolesPermissionsForm:assignedRoles:1:j_idt241",
+      "targets": [
+        ["id=rolesPermissionsForm:assignedRoles:1:j_idt241", "id"],
+        ["linkText=Remove Assigned Role", "linkText"],
+        ["css=#rolesPermissionsForm\\3A assignedRoles\\3A 1\\3Aj_idt241", "css:finder"],
+        ["xpath=//a[@id='rolesPermissionsForm:assignedRoles:1:j_idt241']", "xpath:attributes"],
+        ["xpath=//tbody[@id='rolesPermissionsForm:assignedRoles_data']/tr[2]/td[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[6]", "xpath:href"],
+        ["xpath=//td[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Remove Assigned Role')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec744379-7b9f-483d-a310-eaca0d1afe27",
+      "comment": "",
+      "command": "click",
+      "target": "css=#rolesPermissionsForm\\3Aj_idt405 > .ui-button-text",
+      "targets": [
+        ["css=#rolesPermissionsForm\\3Aj_idt405 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='rolesPermissionsForm:j_idt405']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div[2]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "1d3d84f3-d6b5-4e70-96eb-bb5f1c175d8f",
+    "name": "Login test",
+    "commands": [{
+      "id": "1b44f3bd-eba5-4662-b150-131e1019e466",
+      "comment": "",
+      "command": "open",
+      "target": "/loginpage.xhtml?redirectPage=%2Fdataverse.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7124726-fa8f-42c4-ae70-28444dcb8dec",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x959",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab1f8b2e-cc05-4705-a8c7-9e7865c6413c",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "89a630be-690a-45dd-8f0e-8c12db1d242c",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "dataverseAdmin"
+    }, {
+      "id": "ef449ba5-ab33-474a-a243-7289009c80b5",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:1:sCredValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:1:sCredValue", "id"],
+        ["name=loginForm:credentialsContainer:1:sCredValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 1\\3AsCredValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:1:sCredValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin007"
+    }, {
+      "id": "53985704-a005-41a9-8f74-4f9d69a0ee60",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6531ff6-1a07-4c4e-a01a-1095a1cd0c37",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "dataverseAdmin"
+    }, {
+      "id": "1eafd7d6-cbcf-4fe8-8378-12a2adaec286",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:1:sCredValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:1:sCredValue", "id"],
+        ["name=loginForm:credentialsContainer:1:sCredValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 1\\3AsCredValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:1:sCredValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin007"
+    }, {
+      "id": "164c13a3-8fb4-4c44-bf50-80093a3aa063",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginForm:login",
+      "targets": [
+        ["id=loginForm:login", "id"],
+        ["name=loginForm:login", "name"],
+        ["css=#loginForm\\3Alogin", "css:finder"],
+        ["xpath=//button[@id='loginForm:login']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[3]/div/button", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e32590-9977-48cc-ad58-6791075518e1",
+      "comment": "",
+      "command": "//sendKeys",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "cbded67a-d77a-456d-9342-65531876f748",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordResetForm:inputPassword",
+      "targets": [
+        ["id=passwordResetForm:inputPassword", "id"],
+        ["name=passwordResetForm:inputPassword", "name"],
+        ["css=#passwordResetForm\\3AinputPassword", "css:finder"],
+        ["xpath=//input[@id='passwordResetForm:inputPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='passwordResetForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "939030a1-020c-4d0c-b963-00ef4d0e9308",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordResetForm:inputPassword",
+      "targets": [
+        ["id=passwordResetForm:inputPassword", "id"],
+        ["name=passwordResetForm:inputPassword", "name"],
+        ["css=#passwordResetForm\\3AinputPassword", "css:finder"],
+        ["xpath=//input[@id='passwordResetForm:inputPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='passwordResetForm']/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "admin007"
+    }, {
+      "id": "acb74bfa-9bd0-490b-971c-dc24571e326a",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwordResetForm:retypePassword",
+      "targets": [
+        ["id=passwordResetForm:retypePassword", "id"],
+        ["name=passwordResetForm:retypePassword", "name"],
+        ["css=#passwordResetForm\\3AretypePassword", "css:finder"],
+        ["xpath=//input[@id='passwordResetForm:retypePassword']", "xpath:attributes"],
+        ["xpath=//form[@id='passwordResetForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62acf81f-b010-45f6-a33b-3123c84ad8a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwordResetForm:retypePassword",
+      "targets": [
+        ["id=passwordResetForm:retypePassword", "id"],
+        ["name=passwordResetForm:retypePassword", "name"],
+        ["css=#passwordResetForm\\3AretypePassword", "css:finder"],
+        ["xpath=//input[@id='passwordResetForm:retypePassword']", "xpath:attributes"],
+        ["xpath=//form[@id='passwordResetForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin007"
+    }, {
+      "id": "bba4e18c-c9e5-4eea-9773-9935a41a615e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#passwordResetForm\\3Aj_idt251 > .ui-button-text",
+      "targets": [
+        ["css=#passwordResetForm\\3Aj_idt251 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='passwordResetForm:j_idt251']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Reset Password')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6f79ef85-9228-4cae-9351-f2664eca8436",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["520edd5d-8fa7-47c7-81f8-73e7ac62d1ae"]
+  }],
+  "urls": ["https://demo.dataverse.nl/", "https://harvard.dataverse.org/", "https://dataverse.harvard.edu/", "http://localhost:8080/"],
+  "plugins": []
+}
