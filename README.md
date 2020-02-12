@@ -8,3 +8,17 @@ selenium-side-runner -c "browserName=chrome platform=WIN10 version=latest" *.sid
 ```
 # Warning
 Before starting test process please populate Dataverse with sample data from https://github.com/IQSS/dataverse-sample-data
+# Test Suite description
+* Functionality tested with Selenium test suite:
+ 
+Logging in
+Basic search
+Using facets
+Advanced search
+Using contact form in root dataverse
+Using contact form on dataset level
+Editing some metadata fields
+Restricting files and updating Terms
+Creating and publishing a dataverse
+Create and publish a dataset
+Adding files to a dataset

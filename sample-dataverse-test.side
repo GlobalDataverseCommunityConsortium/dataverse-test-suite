@@ -1,0 +1,1837 @@
+{
+  "id": "0c86970c-305d-4921-ae05-148a0e099381",
+  "version": "2.0",
+  "name": "localhost:8080",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "111e5b2e-b2a7-47ee-b300-e9deb9a0e6dd",
+    "name": "Creating and publishing a dataverse",
+    "commands": [{
+      "id": "828358cc-0a96-4f42-bc07-784f9b51e49e",
+      "comment": "",
+      "command": "open",
+      "target": "/dataverse.xhtml",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83b2426d-97f3-477e-a920-169e1d67c563",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fc77fd8-c45e-4a10-840d-a5acda282f5e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(2) > .btn",
+      "targets": [
+        ["css=.btn-group:nth-child(2) > .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//form[@id='addDataForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Add Data ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "583c4ca4-1d18-4b0a-af4a-09f9635f2efa",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Dataverse",
+      "targets": [
+        ["linkText=New Dataverse", "linkText"],
+        ["css=.open li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'New Dataverse')])[2]", "xpath:link"],
+        ["xpath=//form[@id='addDataForm']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/dataverse.xhtml?ownerId=1')])[2]", "xpath:href"],
+        ["xpath=//form/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9cdf7c3b-9c9c-4796-99a2-cc1f230f7767",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cd34bcb-1487-43f5-b540-284f0018716e",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:name",
+      "targets": [
+        ["id=dataverseForm:name", "id"],
+        ["name=dataverseForm:name", "name"],
+        ["css=#dataverseForm\\3Aname", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:name']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "dataverse Test"
+    }, {
+      "id": "e78f1f94-c3db-49f8-87f9-3e98fbf99b3d",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:identifier",
+      "targets": [
+        ["id=dataverseForm:identifier", "id"],
+        ["name=dataverseForm:identifier", "name"],
+        ["css=#dataverseForm\\3Aidentifier", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:identifier']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c38d4ae-9727-48c0-b30b-bde7309ce342",
+      "comment": "",
+      "command": "type",
+      "target": "id=dataverseForm:identifier",
+      "targets": [
+        ["id=dataverseForm:identifier", "id"],
+        ["name=dataverseForm:identifier", "name"],
+        ["css=#dataverseForm\\3Aidentifier", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:identifier']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[4]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "32198fa6-db19-4621-8917-c22a7f8a1d88",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:dataverseCategory",
+      "targets": [
+        ["id=dataverseForm:dataverseCategory", "id"],
+        ["name=dataverseForm:dataverseCategory", "name"],
+        ["css=#dataverseForm\\3A dataverseCategory", "css:finder"],
+        ["xpath=//select[@id='dataverseForm:dataverseCategory']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[5]/div/div/div/div/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf2cdde8-b217-46a6-9b50-4fd8b07d0641",
+      "comment": "",
+      "command": "select",
+      "target": "id=dataverseForm:dataverseCategory",
+      "targets": [],
+      "value": "label=Journal"
+    }, {
+      "id": "9de3a6f4-0ab8-4c6f-9ad8-264f8246a7c2",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:metadataRoot",
+      "targets": [
+        ["id=dataverseForm:metadataRoot", "id"],
+        ["name=dataverseForm:metadataRoot", "name"],
+        ["css=#dataverseForm\\3AmetadataRoot", "css:finder"],
+        ["xpath=//input[@id='dataverseForm:metadataRoot']", "xpath:attributes"],
+        ["xpath=//div[@id='dataverseForm:optionBlock_content']/div/div/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a93bc9e-393d-4395-be48-c404626a747f",
+      "comment": "",
+      "command": "click",
+      "target": "id=2",
+      "targets": [
+        ["id=2", "id"],
+        ["name=dataverseForm:j_idt277:1:mdbSelectOptional", "name"],
+        ["css=#\\32", "css:finder"],
+        ["xpath=//input[@id='2']", "xpath:attributes"],
+        ["xpath=//div[@id='dataverseForm:optionBlock_content']/div/div/div[2]/div[2]/label/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c89de7eb-a3f3-45f2-9d98-163309291a92",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:save",
+      "targets": [
+        ["id=dataverseForm:save", "id"],
+        ["name=dataverseForm:save", "name"],
+        ["css=#dataverseForm\\3Asave", "css:finder"],
+        ["xpath=//button[@id='dataverseForm:save']", "xpath:attributes"],
+        ["xpath=//form[@id='dataverseForm']/div[8]/button", "xpath:idRelative"],
+        ["xpath=//div[8]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create Dataverse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "626198ee-ec28-4541-8984-8c755c11c3d1",
+      "comment": "",
+      "command": "click",
+      "target": "name=dataverseForm:j_idt331",
+      "targets": [
+        ["name=dataverseForm:j_idt331", "name"],
+        ["css=.col-xs-12 > .btn-group > .btn", "css:finder"],
+        ["xpath=//button[@name='dataverseForm:j_idt331']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42c4d916-168b-4662-b662-ff8981ec8a7b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=dataverseForm:j_idt331",
+      "targets": [
+        ["name=dataverseForm:j_idt331", "name"],
+        ["css=.col-xs-12 > .btn-group > .btn", "css:finder"],
+        ["xpath=//button[@name='dataverseForm:j_idt331']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f8e2b8e-1f75-4b29-94de-782758ac2a19",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "name=dataverseForm:j_idt331",
+      "targets": [
+        ["name=dataverseForm:j_idt331", "name"],
+        ["css=.col-xs-12 > .btn-group > .btn", "css:finder"],
+        ["xpath=//button[@name='dataverseForm:j_idt331']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91c94102-be43-4b4d-b5c9-0ce0a6135e98",
+      "comment": "",
+      "command": "click",
+      "target": "css=#dataverseForm\\3Aj_idt405 > .ui-button-text",
+      "targets": [
+        ["css=#dataverseForm\\3Aj_idt405 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='dataverseForm:j_idt405']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e8fc5097-9866-4f20-b0cc-2102e0197ea5",
+    "name": "Basic search",
+    "commands": [{
+      "id": "5b04dc77-3a8f-4a67-94bb-0f41481a0815",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a09af4c-bd17-41d5-b931-5aa9764b5405",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "57170666-522a-42e1-bcaf-95df211aa49f",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt414:searchBasic",
+      "targets": [
+        ["id=j_idt414:searchBasic", "id"],
+        ["name=j_idt414:searchBasic", "name"],
+        ["css=#j_idt414\\3AsearchBasic", "css:finder"],
+        ["xpath=//input[@id='j_idt414:searchBasic']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt414']/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div/form/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04a69212-3db1-4e60-8ce6-2ad86f992f7d",
+      "comment": "",
+      "command": "type",
+      "target": "id=j_idt414:searchBasic",
+      "targets": [
+        ["id=j_idt414:searchBasic", "id"],
+        ["name=j_idt414:searchBasic", "name"],
+        ["css=#j_idt414\\3AsearchBasic", "css:finder"],
+        ["xpath=//input[@id='j_idt414:searchBasic']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt414']/input[2]", "xpath:idRelative"],
+        ["xpath=//div/div/form/input[2]", "xpath:position"]
+      ],
+      "value": "metrics"
+    }, {
+      "id": "001089f2-2357-4cbd-ae33-3ffdee45e281",
+      "comment": "",
+      "command": "click",
+      "target": "css=#j_idt414\\3Asearchbutton > .glyphicon",
+      "targets": [
+        ["css=#j_idt414\\3Asearchbutton > .glyphicon", "css:finder"],
+        ["xpath=//a[@id='j_idt414:searchbutton']/span", "xpath:idRelative"],
+        ["xpath=//form/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43fb6564-e88a-4fa6-b2b8-059a7658e61d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.search-term-match:nth-child(1)",
+      "targets": [
+        ["css=.search-term-match:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr/td/div/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//td/div/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d8be68a4-38c0-4d49-b751-c8dbc45126a1",
+    "name": "Create and publish dataset",
+    "commands": [{
+      "id": "3c8f4fdc-7e85-4952-ba67-d2357ec8e3b3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fb92ea2-1d24-4a6b-9f6b-b9fc305bbeba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41c930c8-3eca-4d14-a8d6-3d8d0c8aeffd",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(3) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[3]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Manchester Dataverse')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98c22ca3-66cc-4b2d-bdb4-d2e64c7b6d35",
+      "comment": "",
+      "command": "click",
+      "target": "css=#addDataForm .btn",
+      "targets": [
+        ["css=#addDataForm .btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//form[@id='addDataForm']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Add Data ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68d16cb8-acf1-4b60-8710-ff7685b6aaf2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=New Dataset",
+      "targets": [
+        ["linkText=New Dataset", "linkText"],
+        ["css=.open li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'New Dataset')])[2]", "xpath:link"],
+        ["xpath=//form[@id='addDataForm']/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataset.xhtml?ownerId=18')]", "xpath:href"],
+        ["xpath=//form/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da23c4a-ab1f-4751-bbb3-f6084c953221",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText", "id"],
+        ["name=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt457\\3A 0\\3Aj_idt460\\3A 0\\3Aj_idt467\\3A 0\\3Aj_idt469\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt457:0:j_idt460:0:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c112687e-2d49-4432-9001-bcabeb900cad",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=replicationDataButton",
+      "targets": [
+        ["id=replicationDataButton", "id"],
+        ["css=#replicationDataButton", "css:finder"],
+        ["xpath=//input[@id='replicationDataButton']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt457:0:j_idt460:0:editPrimitiveValueFragment']/div/div/div/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f3ca5bc-0d1a-4525-8d29-575efdec9146",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText",
+      "targets": [
+        ["id=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText", "id"],
+        ["name=datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText", "name"],
+        ["css=#datasetForm\\3Aj_idt457\\3A 0\\3Aj_idt460\\3A 0\\3Aj_idt467\\3A 0\\3Aj_idt469\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:j_idt457:0:j_idt460:0:j_idt467:0:j_idt469:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt457:0:j_idt460:0:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "new dataset1"
+    }, {
+      "id": "485a00f3-ff06-4fb5-972b-f4e235739319",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description",
+      "targets": [
+        ["id=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description", "id"],
+        ["name=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description", "name"],
+        ["css=#datasetForm\\3Aj_idt457\\3A 0\\3Aj_idt460\\3A 7\\3Aj_idt499\\3A 0\\3Aj_idt501\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt457:0:j_idt460:7:editCompoundValueFragment']/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c07bca6-a8f3-4dd8-a43a-2e83b8f7af92",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description",
+      "targets": [
+        ["id=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description", "id"],
+        ["name=datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description", "name"],
+        ["css=#datasetForm\\3Aj_idt457\\3A 0\\3Aj_idt460\\3A 7\\3Aj_idt499\\3A 0\\3Aj_idt501\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:j_idt457:0:j_idt460:7:j_idt499:0:j_idt501:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:j_idt457:0:j_idt460:7:editCompoundValueFragment']/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "type in a description here."
+    }, {
+      "id": "5f430550-ace5-4c65-aa6f-f38f204e6cdd",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//table[@id='datasetForm:j_idt457:0:j_idt460:8:j_idt467:0:unique2']/tbody/tr[14]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[14]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1fb0a5d5-80bc-4461-9f74-54c54f809cc8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Asave > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Asave > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:save']/span", "xpath:idRelative"],
+        ["xpath=//div[7]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Save Dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e59c233-4fc4-4f7f-b0a1-fd6ab4467927",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=datasetForm:j_idt216",
+      "targets": [
+        ["id=datasetForm:j_idt216", "id"],
+        ["linkText=Share", "linkText"],
+        ["css=#datasetForm\\3Aj_idt216", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt216']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetButtonBar']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Share')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "20671104-4837-49ef-875d-7a7b56bc8a69",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=datasetForm:j_idt216",
+      "targets": [
+        ["id=datasetForm:j_idt216", "id"],
+        ["linkText=Share", "linkText"],
+        ["css=#datasetForm\\3Aj_idt216", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt216']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetButtonBar']/a[2]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[8]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Share')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b7993021-fe76-4287-9a24-201ba8341452",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt220",
+      "targets": [
+        ["id=datasetForm:j_idt220", "id"],
+        ["linkText=Publish", "linkText"],
+        ["css=#datasetForm\\3Aj_idt220", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt220']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[9]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Publish')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9079ee4c-0988-4ae5-bc44-f0db4c75032d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Aj_idt2077 > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Aj_idt2077 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:j_idt2077']/span", "xpath:idRelative"],
+        ["xpath=//div[34]/div[2]/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8f9e5f01-8865-4fc1-9c5e-09cac387365c",
+    "name": "adding files to a dataset",
+    "commands": [{
+      "id": "8f219ee6-3bbd-4d16-af64-88656f5b788a",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "502a72bf-194f-4a10-8051-dd57ab411c5d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b837d5f7-4d50-4538-894d-c11ec56ad7b3",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(7) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(7) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[7]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[7]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Dataverse IRC Metrics')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcb71c1c-4c2d-4a2d-91ad-3040ef8f0944",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:filesTable:uploadFile-s-Link",
+      "targets": [
+        ["id=datasetForm:tabView:filesTable:uploadFile-s-Link", "id"],
+        ["css=#datasetForm\\3AtabView\\3A filesTable\\3AuploadFile-s-Link", "css:finder"],
+        ["xpath=//span[@id='datasetForm:tabView:filesTable:uploadFile-s-Link']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:filesTable:uploadComputeBlock']/a/span[2]", "xpath:idRelative"],
+        ["xpath=//div/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Upload Files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74bd7039-cf04-4aab-8aaa-9c56a2bcb62d",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:fileUpload_input",
+      "targets": [
+        ["id=datasetForm:fileUpload_input", "id"],
+        ["name=datasetForm:fileUpload_input", "name"],
+        ["css=#datasetForm\\3A fileUpload_input", "css:finder"],
+        ["xpath=//input[@id='datasetForm:fileUpload_input']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:fileUpload']/div/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "92dbb34e-f9b0-40f6-920e-4fe52337a8b4",
+      "comment": "",
+      "command": "click",
+      "target": "id=savebutton",
+      "targets": [
+        ["id=savebutton", "id"],
+        ["css=#savebutton", "css:finder"],
+        ["xpath=//button[@id='savebutton']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:filesButtons']/div/button", "xpath:idRelative"],
+        ["xpath=//form/div[2]/div/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "4a851453-3eac-433a-af64-741b846619c4",
+    "name": "editing metadata fields",
+    "commands": [{
+      "id": "6f37a2f5-f321-4255-ad03-da3a53f591a6",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15936bfa-0c51-4602-9ed0-fcc2d00c683e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bc3c3a23-8137-4585-9f11-ef44bfa2d237",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(3) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[3]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Dataset with Shapefiles, Images, and Tabular Files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e3482c9-c891-4326-9a9c-0567ac871569",
+      "comment": "",
+      "command": "click",
+      "target": "css=#editDataSet > .glyphicon",
+      "targets": [
+        ["css=#editDataSet > .glyphicon", "css:finder"],
+        ["xpath=//button[@id='editDataSet']/span", "xpath:idRelative"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84322f37-b301-4ea6-9730-78ea44b35bd0",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:editMetadata",
+      "targets": [
+        ["id=datasetForm:editMetadata", "id"],
+        ["linkText=Metadata", "linkText"],
+        ["css=#datasetForm\\3A editMetadata", "css:finder"],
+        ["xpath=//a[contains(text(),'Metadata')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:editMetadata']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div/div[2]/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[10]", "xpath:href"],
+        ["xpath=//div/div/div[2]/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Metadata')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a98d20d-1c10-4ff3-af6f-1454ae9dee7c",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 2\\3Aj_idt1340\\3A 0\\3Aj_idt1342\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:2:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c10247c-1f40-4867-a20d-9abc310e67ad",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 2\\3Aj_idt1340\\3A 0\\3Aj_idt1342\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:2:j_idt1340:0:j_idt1342:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:2:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "Shapefiles, Images and Tabular Files Dataset"
+    }, {
+      "id": "01a7b6f1-2624-4abb-9a42-b5f8f3dc2d48",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 7\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:editCompoundValueFragment']/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82a74946-6707-4702-a863-a18327f37075",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 7\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:0:j_idt1374:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:editCompoundValueFragment']/div[2]/div/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Test dataset with shapefiles."
+    }, {
+      "id": "d85ee791-289e-4cd7-a522-9b97eb488b24",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 7\\3Aj_idt1372\\3A 1\\3Aj_idt1374\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:editCompoundValueFragment']/div[2]/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "25b125eb-104f-4035-aef8-c72fae33186b",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 7\\3Aj_idt1372\\3A 1\\3Aj_idt1374\\3A 0\\3A description", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:j_idt1372:1:j_idt1374:0:description']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:7:editCompoundValueFragment']/div[2]/div[3]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[3]/div/textarea", "xpath:position"]
+      ],
+      "value": "Adding a second description."
+    }, {
+      "id": "efaf4ea2-766f-467e-af44-f838f2b96adf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//table[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:8:j_idt1340:0:unique2']/tbody/tr[15]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[15]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93de3c73-b1d7-42cc-8d5c-feb68764f529",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//table[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:13:j_idt1340:0:unique2']/tbody/tr[40]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[40]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7afcafff-7af2-4f2f-867f-bfcd55b7bde1",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,2466)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "62dea6e4-efbe-4853-a4a7-c6cf5a5ddd53",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[20]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07a8604a-a937-47af-9955-8638d23ad8f5",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[20]/div/div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "DANS"
+    }, {
+      "id": "a9d47869-7c15-48ab-ab8c-b19ce4811bc2",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 1\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[20]/div/div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "75225812-7ae5-41b4-9d10-f47506c82048",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406", "id"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1406", "css:finder"],
+        ["xpath=//a[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[20]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe05f3b7-7182-469a-b17a-454c96fb0db8",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406", "id"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1406", "css:finder"],
+        ["xpath=//a[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1406']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[21]", "xpath:href"],
+        ["xpath=//div[20]/div/div[2]/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4927bb09-6c3e-4471-abf0-de9f7926d5b8",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 19\\3Aj_idt1372\\3A 0\\3Aj_idt1374\\3A 1\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:j_idt1372:0:j_idt1374:1:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:19:editCompoundValueFragment']/div[2]/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[20]/div/div[2]/div/div[2]/input", "xpath:position"]
+      ],
+      "value": "KNAW"
+    }, {
+      "id": "652389bc-bc04-47f0-b773-0bb64afa4804",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 20\\3Aj_idt1340\\3A 0\\3Aj_idt1342\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:20:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[21]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe7e0503-a5cd-4023-950e-e6e52e86b5ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText", "id"],
+        ["name=datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText", "name"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1330\\3A 0\\3Aj_idt1333\\3A 20\\3Aj_idt1340\\3A 0\\3Aj_idt1342\\3A 0\\3AinputText", "css:finder"],
+        ["xpath=//input[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:20:j_idt1340:0:j_idt1342:0:inputText']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:j_idt1330:0:j_idt1333:20:editPrimitiveValueFragment']/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[21]/div/div/div/div/div/input", "xpath:position"]
+      ],
+      "value": "2020-01-01"
+    }, {
+      "id": "9807fdc4-4da8-42cc-87af-59d41508a09f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Asave > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Asave > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:save']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cca84046-c83f-46a3-9aca-1b7c988f4234",
+    "name": "Using facets",
+    "commands": [{
+      "id": "bc2b8545-c3a2-498b-a1c3-4911807c7649",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a51db3d4-0a13-4164-b1f5-b828894cf653",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02da15b6-882f-4d86-a101-7f7eedcfc8b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-icon-blank",
+      "targets": [
+        ["css=.ui-icon-blank", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt482']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff58e020-7471-4045-9211-e3ea116e2385",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt448']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27fcb3f-ce2d-43b9-a492-c18d0f08f5a5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt465']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f033a2dc-7064-49ca-a3b0-809c548f92df",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Unpublished (12)",
+      "targets": [
+        ["linkText=Unpublished (12)", "linkText"],
+        ["css=#facetCategoryForm\\3A facetCategoryList\\3A 0\\3Aj_idt494_list > .ui-datalist-item:nth-child(2) > .facetLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Unpublished (12)')]", "xpath:link"],
+        ["xpath=//ul[@id='facetCategoryForm:facetCategoryList:0:j_idt494_list']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root?q=&fq0=publicationStatus%3A%22Unpublished%22&types=files&sort=dateSort&order=')]", "xpath:href"],
+        ["xpath=//li/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Unpublished (12)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c01bc4ae-1700-401b-b898-b3915bc79368",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=FITS (8)",
+      "targets": [
+        ["linkText=FITS (8)", "linkText"],
+        ["css=#facetCategoryForm\\3A facetCategoryList\\3A 1\\3Aj_idt494_list > .ui-datalist-item:nth-child(1) > .facetLink", "css:finder"],
+        ["xpath=//a[contains(text(),'FITS (8)')]", "xpath:link"],
+        ["xpath=//ul[@id='facetCategoryForm:facetCategoryList:1:j_idt494_list']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root?q=&fq1=fileTypeGroupFacet%3A%22FITS%22&fq0=publicationStatus%3A%22Unpublished%22&types=files&sort=dateSort&order=')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'FITS (8)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af5707a1-af70-469f-9680-f88e2e7ca3e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt465']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebc0668c-8728-428d-a3df-98f125db2070",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt482']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58bafe03-8cfe-408d-85ce-e473ae4d4097",
+      "comment": "",
+      "command": "click",
+      "target": "css=.facetLink:nth-child(2) > .glyphicon",
+      "targets": [
+        ["css=.facetLink:nth-child(2) > .glyphicon", "css:finder"],
+        ["xpath=//div[@id='resultsFacetsTopBlock']/a[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d433df0-594a-4385-8bfc-b64fa8b0486f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#resultsFacetsTopBlock .glyphicon",
+      "targets": [
+        ["css=#resultsFacetsTopBlock .glyphicon", "css:finder"],
+        ["xpath=//div[@id='resultsFacetsTopBlock']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f20f4b7e-58eb-4392-b970-e491c29a9dc0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Supergiants (1)",
+      "targets": [
+        ["linkText=Supergiants (1)", "linkText"],
+        ["css=#facetCategoryForm\\3A facetCategoryList\\3A 3\\3Aj_idt494_list > .ui-datalist-item:nth-child(1) > .facetLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Supergiants (1)')]", "xpath:link"],
+        ["xpath=//ul[@id='facetCategoryForm:facetCategoryList:3:j_idt494_list']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root?q=&fq0=keywordValue_ss%3A%22Supergiants%22&types=datasets&sort=dateSort&order=')]", "xpath:href"],
+        ["xpath=//li[4]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Supergiants (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "82436dd8-d2de-459d-96c3-4d53b5cbc9b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#resultsFacetsTopBlock .glyphicon",
+      "targets": [
+        ["css=#resultsFacetsTopBlock .glyphicon", "css:finder"],
+        ["xpath=//div[@id='resultsFacetsTopBlock']/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29009f3b-eee1-438d-b813-67cfcad6d1ec",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=2020 (1)",
+      "targets": [
+        ["linkText=2020 (1)", "linkText"],
+        ["css=.ui-datalist-item:nth-child(4) > .facetLink", "css:finder"],
+        ["xpath=//a[contains(text(),'2020 (1)')]", "xpath:link"],
+        ["xpath=//ul[@id='facetCategoryForm:facetCategoryList:4:j_idt494_list']/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root?q=&fq0=dateOfDeposit_s%3A%222020%22&types=datasets&sort=dateSort&order=')]", "xpath:href"],
+        ["xpath=//li[5]/div/div/ul/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'2020 (1)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cd91d609-d062-4570-8552-16dcd43a5b07",
+    "name": "Restrict file and updating Terms",
+    "commands": [{
+      "id": "00fbda23-b202-489c-8c86-1ad0ea0b93d3",
+      "comment": "",
+      "command": "open",
+      "target": "/dataverse/root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce12a290-3142-4307-87cf-f1e4502291fe",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1df9a7a-3239-4b18-82f5-b3abca76ced4",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(5) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(5) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[5]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[5]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'10+ FITS files and subsetted data files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e7c96ea0-d06c-4851-b925-492274d4c9e0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//tbody[@id='datasetForm:tabView:filesTable_data']/tr[2]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[2]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f38b772-4632-4557-98d3-a0ac853fcc76",
+      "comment": "",
+      "command": "mouseUp",
+      "target": "css=.ui-state-hover > .ui-selection-column",
+      "targets": [
+        ["css=.ui-state-hover > .ui-selection-column", "css:finder"],
+        ["xpath=//tbody[@id='datasetForm:tabView:filesTable_data']/tr[3]/td", "xpath:idRelative"],
+        ["xpath=//div[2]/table/tbody/tr[3]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8afff80a-37df-430e-9f9b-c8664f1dc968",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//tbody[@id='datasetForm:tabView:filesTable_data']/tr[3]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "de79df0b-a46f-4e58-8d18-736e06e7bc19",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//tbody[@id='datasetForm:tabView:filesTable_data']/tr[4]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//tr[4]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "71a672a8-63e8-4d95-baf8-b97fcda02325",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-group:nth-child(1) > .btn-access",
+      "targets": [
+        ["css=.btn-group:nth-child(1) > .btn-access", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//th[@id='datasetForm:tabView:filesTable:j_idt1130']/span/div/button", "xpath:idRelative"],
+        ["xpath=//span/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,' Edit Files ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ff858e4-666b-493c-a2c6-47d9c387d9e5",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:filesTable:j_idt1142",
+      "targets": [
+        ["id=datasetForm:tabView:filesTable:j_idt1142", "id"],
+        ["linkText=Restrict", "linkText"],
+        ["css=#datasetForm\\3AtabView\\3A filesTable\\3Aj_idt1142", "css:finder"],
+        ["xpath=//a[contains(text(),'Restrict')]", "xpath:link"],
+        ["xpath=//a[@id='datasetForm:tabView:filesTable:j_idt1142']", "xpath:attributes"],
+        ["xpath=//th[@id='datasetForm:tabView:filesTable:j_idt1130']/span/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[27]", "xpath:href"],
+        ["xpath=//span/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Restrict')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66605e02-0e30-4ca1-81d5-8938bdc247f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='datasetForm:requestAccess']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div[2]/div/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "015460f7-81c4-48e7-a382-ecbda6764a76",
+      "comment": "",
+      "command": "click",
+      "target": "css=#datasetForm\\3Aj_idt2067 > .ui-button-text",
+      "targets": [
+        ["css=#datasetForm\\3Aj_idt2067 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='datasetForm:j_idt2067']/span", "xpath:idRelative"],
+        ["xpath=//div[32]/div[2]/div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb7f4bc5-9cf4-4d92-937e-7ef293693c11",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Terms",
+      "targets": [
+        ["linkText=Terms", "linkText"],
+        ["css=.ui-state-hover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Terms')])[2]", "xpath:link"],
+        ["xpath=//div[@id='datasetForm:tabView']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#datasetForm:tabView:termsTab')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "08eccc63-4261-41af-ab1b-1e2700d25161",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:j_idt1414",
+      "targets": [
+        ["id=datasetForm:tabView:j_idt1414", "id"],
+        ["linkText=Edit Terms Requirements", "linkText"],
+        ["css=#datasetForm\\3AtabView\\3Aj_idt1414", "css:finder"],
+        ["xpath=//a[@id='datasetForm:tabView:j_idt1414']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:termsTab']/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[47]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Edit Terms Requirements')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb04b083-ceed-4367-bd09-040f613aca5f",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:tabView:restrictions",
+      "targets": [
+        ["id=datasetForm:tabView:restrictions", "id"],
+        ["name=datasetForm:tabView:restrictions", "name"],
+        ["css=#datasetForm\\3AtabView\\3Arestrictions", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:restrictions']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:touFragment']/div/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f157b75-a24c-4647-b1e9-a9a21b77ab31",
+      "comment": "",
+      "command": "type",
+      "target": "id=datasetForm:tabView:restrictions",
+      "targets": [
+        ["id=datasetForm:tabView:restrictions", "id"],
+        ["name=datasetForm:tabView:restrictions", "name"],
+        ["css=#datasetForm\\3AtabView\\3Arestrictions", "css:finder"],
+        ["xpath=//textarea[@id='datasetForm:tabView:restrictions']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetForm:tabView:touFragment']/div/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": "you need to ask first!"
+    }, {
+      "id": "c7d03fac-5480-4726-a896-24c7dddc50ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:save",
+      "targets": [
+        ["id=datasetForm:save", "id"],
+        ["name=datasetForm:save", "name"],
+        ["css=#datasetForm\\3Asave", "css:finder"],
+        ["xpath=//button[@id='datasetForm:save']", "xpath:attributes"],
+        ["xpath=//form[@id='datasetForm']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "44313faa-bf9b-47c0-b0bc-2b120669600e",
+    "name": "using contact form in root",
+    "commands": [{
+      "id": "630ce325-6401-48eb-9de2-f5a1655f677c",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78435311-eaf3-48b7-a538-adb7d33a9530",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "493807d5-a4f1-40ce-8bc2-bf49cf877ee0",
+      "comment": "",
+      "command": "click",
+      "target": "id=dataverseForm:j_idt323",
+      "targets": [
+        ["id=dataverseForm:j_idt323", "id"],
+        ["linkText=Contact", "linkText"],
+        ["css=#dataverseForm\\3Aj_idt323", "css:finder"],
+        ["xpath=//a[@id='dataverseForm:j_idt323']", "xpath:attributes"],
+        ["xpath=//div[@id='actionButtonBlock']/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "462e8982-cfb1-4f99-a437-03d371a43c89",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:messageSubject",
+      "targets": [
+        ["id=emailForm:messageSubject", "id"],
+        ["name=emailForm:messageSubject", "name"],
+        ["css=#emailForm\\3AmessageSubject", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSubject']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffab8ee7-24a2-45f5-a0a6-9c6c0fa09986",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:messageSubject",
+      "targets": [
+        ["id=emailForm:messageSubject", "id"],
+        ["name=emailForm:messageSubject", "name"],
+        ["css=#emailForm\\3AmessageSubject", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSubject']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "question"
+    }, {
+      "id": "87cb95c6-d4bf-48b8-bec9-017dab16dee9",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:userMessage",
+      "targets": [
+        ["id=emailForm:userMessage", "id"],
+        ["name=emailForm:userMessage", "name"],
+        ["css=#emailForm\\3AuserMessage", "css:finder"],
+        ["xpath=//textarea[@id='emailForm:userMessage']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18d876c1-5b39-4bdc-a050-6dbc990779ba",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:userMessage",
+      "targets": [
+        ["id=emailForm:userMessage", "id"],
+        ["name=emailForm:userMessage", "name"],
+        ["css=#emailForm\\3AuserMessage", "css:finder"],
+        ["xpath=//textarea[@id='emailForm:userMessage']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "hello, I have a question "
+    }, {
+      "id": "7c5f6f22-394c-4533-a3ed-4860d1a92dd4",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:messageSum",
+      "targets": [
+        ["id=emailForm:messageSum", "id"],
+        ["name=emailForm:messageSum", "name"],
+        ["css=#emailForm\\3AmessageSum", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSum']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69bb79e1-166d-49c0-b286-9d9af8aeedb2",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:messageSum",
+      "targets": [
+        ["id=emailForm:messageSum", "id"],
+        ["name=emailForm:messageSum", "name"],
+        ["css=#emailForm\\3AmessageSum", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSum']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "3"
+    }, {
+      "id": "e71b7740-e1ab-4c77-8733-5556be7c30c8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#emailForm\\3Aj_idt920 > .ui-button-text",
+      "targets": [
+        ["css=#emailForm\\3Aj_idt920 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='emailForm:j_idt920']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Send Message')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "57984cd7-80ef-4584-b3bd-72badc83c1e8",
+    "name": "Using contact form dataset level",
+    "commands": [{
+      "id": "ead7fe49-5503-48dc-996d-0b855b8a7980",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54500519-7e36-4cc1-8d57-386f46a69c53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "464e7068-fc06-49eb-9714-21640dc5d840",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Published (5)",
+      "targets": [
+        ["linkText=Published (5)", "linkText"],
+        ["css=#facetCategoryForm\\3A facetCategoryList\\3A 2\\3Aj_idt494_list > .ui-datalist-item:nth-child(1) > .facetLink", "css:finder"],
+        ["xpath=//a[contains(text(),'Published (5)')]", "xpath:link"],
+        ["xpath=//ul[@id='facetCategoryForm:facetCategoryList:2:j_idt494_list']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root?q=&fq0=publicationStatus%3A%22Published%22&types=dataverses%3Adatasets&sort=dateSort&order=')]", "xpath:href"],
+        ["xpath=//li[3]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Published (5)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aaa43367-15d0-47da-907a-439d691cdc64",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt465']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4939991-4a14-46f6-8ef6-67ff600fe63a",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(1) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(1) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'dataverse Test')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da6c5d86-d90f-45ef-9e1a-557f61c62381",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt465']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/a/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4123c817-a218-4c09-b427-6d0161fe6648",
+      "comment": "",
+      "command": "click",
+      "target": "id=facetType:j_idt448",
+      "targets": [
+        ["id=facetType:j_idt448", "id"],
+        ["css=#facetType\\3Aj_idt448", "css:finder"],
+        ["xpath=//div[@id='facetType:j_idt448']", "xpath:attributes"],
+        ["xpath=//form[@id='facetType']/div/span/div", "xpath:idRelative"],
+        ["xpath=//span/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cc719281-46f6-46db-8219-75e160023c0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=breadcrumbLnk0",
+      "targets": [
+        ["id=breadcrumbLnk0", "id"],
+        ["linkText=Root", "linkText"],
+        ["css=#breadcrumbLnk0", "css:finder"],
+        ["xpath=//a[contains(text(),'Root')]", "xpath:link"],
+        ["xpath=//a[@id='breadcrumbLnk0']", "xpath:attributes"],
+        ["xpath=//div[@id='breadcrumbNavBlock']/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Root')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9964136-9096-4d94-8602-c425533d6899",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) .card-title-icon-block > a > span",
+      "targets": [
+        ["css=tr:nth-child(3) .card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr[3]/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//tr[3]/td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Dataset with Shapefiles, Images, and Tabular Files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d74d604d-1215-4446-9f65-4512a0494bb6",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=datasetForm:j_idt214",
+      "targets": [
+        ["id=datasetForm:j_idt214", "id"],
+        ["linkText=Contact", "linkText"],
+        ["css=#datasetForm\\3Aj_idt214", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt214']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetButtonBar']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61e4c5a4-fab8-43a8-9815-8400e98bd812",
+      "comment": "",
+      "command": "click",
+      "target": "id=datasetForm:j_idt214",
+      "targets": [
+        ["id=datasetForm:j_idt214", "id"],
+        ["linkText=Contact", "linkText"],
+        ["css=#datasetForm\\3Aj_idt214", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt214']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetButtonBar']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3a2bd5a6-c677-45d1-a803-e79507237b00",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=datasetForm:j_idt214",
+      "targets": [
+        ["id=datasetForm:j_idt214", "id"],
+        ["linkText=Contact", "linkText"],
+        ["css=#datasetForm\\3Aj_idt214", "css:finder"],
+        ["xpath=//a[@id='datasetForm:j_idt214']", "xpath:attributes"],
+        ["xpath=//div[@id='datasetButtonBar']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Contact')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cf92b63-c57f-47ec-aebc-23e7e681d43a",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:messageSubject",
+      "targets": [
+        ["id=emailForm:messageSubject", "id"],
+        ["name=emailForm:messageSubject", "name"],
+        ["css=#emailForm\\3AmessageSubject", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSubject']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1350d4d9-91a0-4f27-955e-37f12cb72624",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:messageSubject",
+      "targets": [
+        ["id=emailForm:messageSubject", "id"],
+        ["name=emailForm:messageSubject", "name"],
+        ["css=#emailForm\\3AmessageSubject", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSubject']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "question about dataset"
+    }, {
+      "id": "f5128b48-c4f6-45f4-b89d-4263499200b3",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:userMessage",
+      "targets": [
+        ["id=emailForm:userMessage", "id"],
+        ["name=emailForm:userMessage", "name"],
+        ["css=#emailForm\\3AuserMessage", "css:finder"],
+        ["xpath=//textarea[@id='emailForm:userMessage']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b2abe32-b2f4-4262-81e7-51b637000c41",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:userMessage",
+      "targets": [
+        ["id=emailForm:userMessage", "id"],
+        ["name=emailForm:userMessage", "name"],
+        ["css=#emailForm\\3AuserMessage", "css:finder"],
+        ["xpath=//textarea[@id='emailForm:userMessage']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[4]/div/textarea", "xpath:idRelative"],
+        ["xpath=//div[4]/div/textarea", "xpath:position"]
+      ],
+      "value": "hello world!"
+    }, {
+      "id": "fd4c570d-96bb-434c-bd5c-0c6fb379ca11",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-sm-offset-3",
+      "targets": [
+        ["css=.col-sm-offset-3", "css:finder"],
+        ["xpath=//form[@id='emailForm']/div[5]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/form/div[5]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7f25ebad-e168-4d9c-b13f-f037374640ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=emailForm:messageSum",
+      "targets": [
+        ["id=emailForm:messageSum", "id"],
+        ["name=emailForm:messageSum", "name"],
+        ["css=#emailForm\\3AmessageSum", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSum']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "494a9ebb-74dd-457d-99fa-f2618d89c7c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=emailForm:messageSum",
+      "targets": [
+        ["id=emailForm:messageSum", "id"],
+        ["name=emailForm:messageSum", "name"],
+        ["css=#emailForm\\3AmessageSum", "css:finder"],
+        ["xpath=//input[@id='emailForm:messageSum']", "xpath:attributes"],
+        ["xpath=//form[@id='emailForm']/div[5]/div/input", "xpath:idRelative"],
+        ["xpath=//div[5]/div/input", "xpath:position"]
+      ],
+      "value": "8"
+    }, {
+      "id": "50ec5acd-e26d-4046-b319-204b43a01a7c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#emailForm\\3Aj_idt2184 > .ui-button-text",
+      "targets": [
+        ["css=#emailForm\\3Aj_idt2184 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='emailForm:j_idt2184']/span", "xpath:idRelative"],
+        ["xpath=//div[6]/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Send Message')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d1647b00-c7f1-49f3-8a36-b04a9f7dc18d",
+    "name": "Advanced search",
+    "commands": [{
+      "id": "f9c22899-c616-4d2d-9bb7-4e28f9a3e8f0",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a7c8ee06-37a5-4a80-8b10-dee0c142722b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1065",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fd11b271-81b5-4f8f-8433-18c08479b6c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=j_idt414:advsearchlink",
+      "targets": [
+        ["id=j_idt414:advsearchlink", "id"],
+        ["linkText=Advanced Search", "linkText"],
+        ["name=j_idt414:advsearchlink", "name"],
+        ["css=#j_idt414\\3A advsearchlink", "css:finder"],
+        ["xpath=//a[contains(text(),'Advanced Search')]", "xpath:link"],
+        ["xpath=//a[@id='j_idt414:advsearchlink']", "xpath:attributes"],
+        ["xpath=//form[@id='j_idt414']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dataverse/root/search')]", "xpath:href"],
+        ["xpath=//form/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Advanced Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b9d91b7-1f7e-483a-a01d-e544a3d38d42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-state-hover > .ui-chkbox-icon",
+      "targets": [
+        ["css=.ui-state-hover > .ui-chkbox-icon", "css:finder"],
+        ["xpath=//table[@id='advancedSearchForm:j_idt199:0:j_idt204:4:j_idt207']/tbody/tr[13]/td/div/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div[5]/div/div/table/tbody/tr[13]/td/div/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0c71b96-0b7f-423a-af46-6807889fbd8c",
+      "comment": "",
+      "command": "click",
+      "target": "id=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue",
+      "targets": [
+        ["id=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue", "id"],
+        ["name=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue", "name"],
+        ["css=#advancedSearchForm\\3Aj_idt199\\3A 0\\3Aj_idt204\\3A 5\\3AsearchValue", "css:finder"],
+        ["xpath=//input[@id='advancedSearchForm:j_idt199:0:j_idt204:5:searchValue']", "xpath:attributes"],
+        ["xpath=//div[@id='panelCollapseCitationFieldList1']/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76768d9b-6d32-4061-b7b1-6c38412abc11",
+      "comment": "",
+      "command": "type",
+      "target": "id=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue",
+      "targets": [
+        ["id=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue", "id"],
+        ["name=advancedSearchForm:j_idt199:0:j_idt204:5:searchValue", "name"],
+        ["css=#advancedSearchForm\\3Aj_idt199\\3A 0\\3Aj_idt204\\3A 5\\3AsearchValue", "css:finder"],
+        ["xpath=//input[@id='advancedSearchForm:j_idt199:0:j_idt204:5:searchValue']", "xpath:attributes"],
+        ["xpath=//div[@id='panelCollapseCitationFieldList1']/div[6]/div/input", "xpath:idRelative"],
+        ["xpath=//div[6]/div/input", "xpath:position"]
+      ],
+      "value": "supergiants"
+    }, {
+      "id": "bf3ecc4d-b566-4700-b6c8-beb360a96b50",
+      "comment": "",
+      "command": "click",
+      "target": "css=#advancedSearchForm\\3Aj_idt224 > .ui-button-text",
+      "targets": [
+        ["css=#advancedSearchForm\\3Aj_idt224 > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='advancedSearchForm:j_idt224']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b635268e-8065-4d92-b1fa-5373b8c1a4d9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.card-title-icon-block > a > span",
+      "targets": [
+        ["css=.card-title-icon-block > a > span", "css:finder"],
+        ["xpath=//table[@id='resultsTable']/tbody/tr/td/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//td/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'10+ FITS files and subsetted data files')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3606f60-878e-4602-b311-67ef5ce72ff2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Metadata",
+      "targets": [
+        ["linkText=Metadata", "linkText"],
+        ["css=.ui-state-hover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Metadata')])[2]", "xpath:link"],
+        ["xpath=//div[@id='datasetForm:tabView']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#datasetForm:tabView:metadataMapTab')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5e577eaa-6dd4-4e8d-a027-a3dbdfb83c6e",
+    "name": "Logging in",
+    "commands": [{
+      "id": "d06f7020-f901-4229-bc46-ace8ff657bff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a51cb2ab-9746-45cb-a0e6-65079e6fbfb4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x1133",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "88fe44eb-8e5a-4ef2-a949-1f79a4eadc13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log In",
+      "targets": [
+        ["linkText=Log In", "linkText"],
+        ["css=li:nth-child(6) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log In')]", "xpath:link"],
+        ["xpath=//div[@id='topNavBar']/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/loginpage.xhtml?redirectPage=%2Fdataverse.xhtml')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "52d3a797-052f-4612-bfc3-f57fab864558",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b707b867-fb14-45d3-b388-23cf8ee5a7c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:0:credValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:0:credValue", "id"],
+        ["name=loginForm:credentialsContainer:0:credValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 0\\3A credValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:0:credValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "dataverseAdmin"
+    }, {
+      "id": "855d3e1f-560a-4dfb-bb19-a0424d5e3e0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=loginForm:credentialsContainer:1:sCredValue",
+      "targets": [
+        ["id=loginForm:credentialsContainer:1:sCredValue", "id"],
+        ["name=loginForm:credentialsContainer:1:sCredValue", "name"],
+        ["css=#loginForm\\3A credentialsContainer\\3A 1\\3AsCredValue", "css:finder"],
+        ["xpath=//input[@id='loginForm:credentialsContainer:1:sCredValue']", "xpath:attributes"],
+        ["xpath=//form[@id='loginForm']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "admin1"
+    }, {
+      "id": "ecc644a0-0c33-4174-b6b7-49116802cfe3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#loginForm\\3Alogin > .ui-button-text",
+      "targets": [
+        ["css=#loginForm\\3Alogin > .ui-button-text", "css:finder"],
+        ["xpath=//button[@id='loginForm:login']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Log In')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "27df776f-c387-4416-a45a-2753622543f7",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a48cadaa-dfae-4009-8551-068bf75ab8eb",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5e577eaa-6dd4-4e8d-a027-a3dbdfb83c6e", "e8fc5097-9866-4f20-b0cc-2102e0197ea5", "cca84046-c83f-46a3-9aca-1b7c988f4234", "d1647b00-c7f1-49f3-8a36-b04a9f7dc18d", "44313faa-bf9b-47c0-b0bc-2b120669600e", "57984cd7-80ef-4584-b3bd-72badc83c1e8", "4a851453-3eac-433a-af64-741b846619c4", "cd91d609-d062-4570-8552-16dcd43a5b07", "111e5b2e-b2a7-47ee-b300-e9deb9a0e6dd", "d8be68a4-38c0-4d49-b751-c8dbc45126a1", "8f9e5f01-8865-4fc1-9c5e-09cac387365c"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
